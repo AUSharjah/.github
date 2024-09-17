@@ -1,0 +1,52 @@
+name: 📦 Update
+type: 📦 Update
+description: None security dependencies update, external patches.
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        None security dependencies update, external patches.
+
+  - type: textarea
+    id: dependency-info
+    attributes:
+      label: "📦 Update Dependencies"
+      description: "Name, New version, Release Note"
+      placeholder: "- [ ] [$dependency-$newVersion](link-to-releasenote)\n- [ ] [$dependency-$newVersion](link-to-releasenote)"
+      value: |
+        - [ ] [example-dependency-1.2.3](insert-link-to-releasenote)
+        - [ ] [example-dependency-2.3.4](insert-link-to-releasenote)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: "Patch Classification"
+      description: "Go with maximum"
+      options:
+        - "🥉 Hotfix"
+        - "🥈 Minor"
+        - "🥇 Major"
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact-assessment
+    attributes:
+      label: "🧩 Impact Assessment"
+      placeholder: "What is the impact of this update on the system? Is there any testing required? Major Changes? Database Schema?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: deployment-plan
+    attributes:
+      label: "📋 Deployment Plan"
+      placeholder: "Provide any additional steps required for implementation"
+    validations:
+      required: true

@@ -1,0 +1,64 @@
+name: "🔥 Bug & Issue"
+type: "🔥 Bug"
+description: An unexpected problem or behavior
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An unexpected problem or behavior to be identified and fixed if required.
+
+  - type: textarea
+    id: intro
+    attributes:
+      label: 🔥 What happened
+      description: A clear and concise description of what happened.
+      placeholder: "Explain what happened..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 🧩 Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: "Explain what is expected to happen..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 👣 Steps to reproduce
+      description: A clear and concise description of how to reproduce the issue.
+      placeholder: "1. Go to...\n2. Click on...\n3. Scroll down to...\n4. See error"
+    validations:
+      required: false
+
+  - type: textarea
+    id: reported-by
+    attributes:
+      label: 👤 Reported By
+      description: primary stakeholder username.
+      placeholder: "- Name / example@aus.edu\n- Name / example@aus.edu"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: "📍 Issue Source"
+      description: "Is it a support ticket, Sentry or email. If email copy text as is, otherwise link to it and copy the description."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📑 Additional Information / Log if available
+      description: Add any other context about the problem here.
+      placeholder: "Any other information..."
+    validations:
+      required: false

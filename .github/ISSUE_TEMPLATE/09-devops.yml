@@ -1,0 +1,65 @@
+name: "🧬 DevSecOps"
+type: "🧬 DevSecOps"
+description: "CI/CD Enhancement, configurations including GitHub Actions."
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        CI/CD Enhancement, configurations including GitHub Actions.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "🧬  DevSecOps Task"
+      placeholder: "Provide an overview of the activity."
+      description: "A clear and concise description of the task being proposed."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: "Type of Task"
+      description: "Specify the category of the task."
+      options:
+        - "🪡 CI/CD Pipeline"
+        - "🪄 Automation"
+        - "🫙 Containers"
+        - "🎛️ Server VM"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "🧰 Environment"
+      description: "Specify the environment impacted (e.g., Dev, Staging, Production)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-implement
+    attributes:
+      label: "📑 Steps to Implement"
+      placeholder: "List the steps or commands required to implement the task."
+      value: |
+        - [ ] Step 1: Set up the CI/CD pipeline
+        - [ ] Step 2: Configure GitHub Actions
+        - [ ] Step 3: Test the pipeline
+    validations:
+      required: true
+
+  - type: textarea
+    id: automation-tools
+    attributes:
+      label: "🗜️ Automation Tools"
+      placeholder: "Specify any automation tools or scripts involved (e.g., Ansible, Docker, Kubernetes, GitHub Action)."
+      value: |
+        - X Ansible for configuration management
+        - X Docker for containerization
+        - X GitHub Actions for CI/CD automation
+    validations:
+      required: false

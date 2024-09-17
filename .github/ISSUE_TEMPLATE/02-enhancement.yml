@@ -1,0 +1,100 @@
+name: "🚀 Enhancement"
+type: "🚀 Enhancement"
+description: New Feature, Enhancement or Refactoring
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New Feature or Enhancement to an existing one
+
+  - type: textarea
+    id: enhancement-description
+    attributes:
+      label: "🚀 Description (overview of what is being proposed)"
+      description: "A clear and concise description of the enhancement being proposed."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Enhancement Type
+      description: "Select the type of enhancement being proposed."
+      multiple: false
+      options:
+        - ✨ New Feature
+        - ⚡  Enhancement
+        - ♻️ Refactoring
+    validations:
+      required: true
+
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: "👥 Stakeholders (Requested by & Business Owner)"
+      description: "Business people or teams who are involved in this feature."
+      placeholder: "## Role\n- Name / example@aus.edu\n- Name / example@aus.edu\n\n## Role\n- Name / example@aus.edu \n- Name / example"
+      value: |
+        #### Requested by
+        - Name / example@aus.edu
+        #### Business Owner
+        - Name / example@aus.edu
+        #### UAT
+        - Name / example@aus.edu
+    validations:
+      required: true
+
+  - type: textarea
+    id: Justification
+    attributes:
+      label: "🫧 Justification"
+      description: "Explain the problem this enhancement solves or the value it adds."
+    validations:
+      required: true
+
+  - type: textarea
+    id: source-link
+    attributes:
+      label: "🧭 Request Source"
+      description: "A ticket or an email. If email copy text as is, if Support ticket link to it and copy the description."
+    validations:
+      required: true
+
+  - type: textarea
+    id: architectural-impact
+    attributes:
+      label: "🗃️ Dependencies & Impact"
+      description: "Identify any dependencies or impacts on existing systems, Infrastructure, or other units."
+      value: |
+        - [ ] Dependency 1
+        - [ ] Dependency 2
+        - [ ] Dependency 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "🏁 Success Criteria"
+      description: "Define clear conditions for be considered complete."
+      value: |
+        - [ ] Acceptance criteria 1
+        - [ ] Acceptance criteria 2
+        - [ ] Acceptance criteria 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: rollback-plan
+    attributes:
+      label: "♻️ Rollback Plan"
+      placeholder: "Provide steps to revert the change if something goes wrong during implementation."
+      value: |
+        - [ ] Rollback to previous version
+        - [ ] Restore database backup
+        - [ ] Notify stakeholders
+    validations:
+      required: true

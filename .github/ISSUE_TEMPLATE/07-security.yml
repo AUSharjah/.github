@@ -1,0 +1,66 @@
+name: "🚨 Security Issue"
+type: "🚨 Security Issue"
+description: Security issue, vulnerability and patches.
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security issue, vulnerability and patches.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🚨 Security Issue
+      placeholder: "Provide details about the security issue or vulnerability."
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependency-component
+    attributes:
+      label: "🔍 Scope & Analysis"
+      placeholder: "Component and the potential impact if the vulnerability is not addressed."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity-level
+    attributes:
+      label: "Severity Level"
+      description: "Indicate the severity of the vulnerability."
+      options:
+        - "🔵 Low"
+        - "🟡 Medium"
+        - "🟠 High"
+        - "🔴 Critical"
+      default: 1
+    validations:
+      required: true
+
+  - type: input
+    id: external-request-link
+    attributes:
+      label: "⚓ External Request Link"
+      description: "Link to the external request (if applicable)"
+      placeholder: "[label](link)"
+    validations:
+      required: false
+
+  - type: input
+    id: cvss-score
+    attributes:
+      label: "🧮 CVSS Score (Optional)"
+      description: "The Common Vulnerability Scoring System (CVSS) score, if applicable."
+    validations:
+      required: false
+
+  - type: textarea
+    id: vulnerability-reference
+    attributes:
+      label: "ℹ️ Vulnerability Reference"
+      placeholder: "Provide any references, such as OWASP, CVE IDs or links to vulnerability reports."
+    validations:
+      required: false

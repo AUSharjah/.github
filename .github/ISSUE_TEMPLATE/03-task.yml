@@ -1,0 +1,37 @@
+name: "🎯 Task"
+type: "🎯 Task"
+description: Configuration, manual task to be executed
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Configuration, manual task to be executed
+
+  - type: textarea
+    id: Brief
+    attributes:
+      label: 🎯 Task Description
+      placeholder: Brief description of task objective
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 📋 Implement Steps
+      description: Use [task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) to track progress.
+      placeholder: "- [ ] Step 1\n- [ ] Step 2\n"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📑 Additional Information
+      description: Add any other context or details here such as notes.
+      placeholder: "Any other information..."
+    validations:
+      required: false

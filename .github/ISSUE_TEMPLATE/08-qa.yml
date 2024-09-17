@@ -1,0 +1,52 @@
+name: "🧪 Quality Assurance & Automated testing"
+type: "🧪 QA"
+description: Automated testing using tools like Playwright, BrowserStack, and other QA automation frameworks.
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Automated testing using tools like Playwright, BrowserStack, and other QA automation frameworks.
+
+  - type: textarea
+    id: test-description
+    attributes:
+      label: "🧪 Test Description"
+      placeholder: "Provide a brief description of the test or automation task."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: test-type
+    attributes:
+      label: "Type of Test"
+      description: "Select the type of test being implemented."
+      options:
+        - "🧪 Functional Testing"
+        - "🔍 Regression Testing"
+        - "📊 Performance Testing"
+        - "🛠️ Integration Testing"
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-steps
+    attributes:
+      label: "📋 Implementation Steps & Tools"
+      placeholder: "List the steps or commands required to implement the test."
+      value: |
+        - [ ] Step 1: Set up the testing environment
+        - [ ] Step 2: Write test scripts using Playwright
+        - [ ] Step 3: Execute tests on BrowserStack
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "📑 Additional Context"
+      placeholder: "Any other information or context related to the test."
+    validations:
+      required: false

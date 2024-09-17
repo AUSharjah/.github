@@ -1,0 +1,36 @@
+name: "🔍 Investigation"
+type: "🔍 Investigation"
+description: A clarification on existing or undocumented logic
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A clarification on existing or undocumented logic
+
+  - type: textarea
+    id: reported-by
+    attributes:
+      label: 👤 Reported By
+      description: primary stakeholder username.
+      placeholder: "- Name / example@aus.edu"
+
+  - type: textarea
+    id: intro
+    attributes:
+      label: 🔍 What needs investigation
+      description: A clear and concise description of what needs to be investigated.
+      placeholder: "Explain what needs investigation..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 📚 Context
+      description: Additional context or background information related to the investigation.
+      placeholder: "Provide any relevant context or background information..."
+    validations:
+      required: false

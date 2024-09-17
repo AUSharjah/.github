@@ -1,0 +1,40 @@
+name: "📝 Documentation & Content"
+type: "📝 Docs"
+description: Documentation, content corrections, and typo fixes. that do not alter business/code behavior.
+projects: ["AUSharjah/1"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Text changes in executable code files that do not alter business/code behavior.
+
+  - type: textarea
+    id: files-affected
+    attributes:
+      label: "📝 Typo File(s) Affected"
+      description: "List the files where text changes are being made."
+      placeholder: "- [ ] [FileName](link-to-file-line)\n- [ ] [FileName](link-to-file-line)"
+      value: |
+        - [ ] [README.md](link-to-file-line)
+        - [ ] [CONTRIBUTING.md](link-to-file-line)
+    validations:
+      required: true
+
+  - type: textarea
+    id: updated-text
+    attributes:
+      label: "🗒️ Updated Text"
+      placeholder: "The proposed updated text or comment."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: "✅ No Impact"
+      description: "Confirm that no business logic or system behavior is affected by these changes."
+      options:
+        - label: "I confirm No business logic or system behavior is affected"
+          required: true
