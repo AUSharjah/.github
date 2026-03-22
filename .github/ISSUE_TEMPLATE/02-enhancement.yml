@@ -13,21 +13,8 @@ body:
   - type: textarea
     id: enhancement-description
     attributes:
-      label: "🚀 Description (overview of what is being proposed)"
+      label: "🚀 Overview"
       description: "A clear and concise description of the enhancement being proposed."
-    validations:
-      required: true
-
-  - type: dropdown
-    id: type
-    attributes:
-      label: Enhancement Type
-      description: "Select the type of enhancement being proposed."
-      multiple: false
-      options:
-        - ✨ New Feature
-        - ⚡  Enhancement
-        - ♻️ Refactoring
     validations:
       required: true
 
@@ -97,4 +84,4 @@ body:
         - [ ] Restore database backup
         - [ ] Notify stakeholders
     validations:
-      required: true
+      required: false
